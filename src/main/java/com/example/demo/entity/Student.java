@@ -1,7 +1,6 @@
 package com.example.demo.entity;
 
 
-
 public class Student {
    private int id;
    private String name;
@@ -9,7 +8,7 @@ public class Student {
    
    public int getId() {
     return id;
-   }
+   }  
    public void setId(int id) {
     this.id = id;
    }
@@ -37,4 +36,4 @@ public class Student {
    }
    
    }
-}
+} 
