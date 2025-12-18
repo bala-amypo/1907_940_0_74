@@ -22,5 +22,8 @@ public class StudentServiceImple implements StudentService {
 
         return studentRespository.save(student);
     }
+    public Student getStudentById(Long id){
+        return 
+    }
 }
 
