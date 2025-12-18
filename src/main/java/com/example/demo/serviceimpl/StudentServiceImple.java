@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRespository;
 import com.example.demo.service.StudentService;
-
+import com.example.demo.exception.ResourceNotFoundException;
 
 @Service
 
@@ -23,7 +23,10 @@ public class StudentServiceImple implements StudentService {
         return studentRespository.save(student);
     }
     public Student getStudentById(Long id){
-        return 
+        return studentRespository.findById(id)
+        .orElseThrow(()-> new ResourceNotFoundException("Student not found"));
     }
+
+
 }
 
