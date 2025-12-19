@@ -12,7 +12,7 @@ import com.example.demo.exception.ResourceNotFoundException;
 
 public class StudentServiceImple implements StudentService {
     // private final StudentRespository studentRepository;
-    // public StudentServiceImple(StudentRespository studentRepository){
+    // pu   blic StudentServiceImple(StudentRespository studentRepository){
      //   this.studentRespoitory=studentRepository;
     // }
     @Autowired
